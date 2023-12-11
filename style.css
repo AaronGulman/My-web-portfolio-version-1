@@ -1,0 +1,131 @@
+html {
+	height: 100vh;
+	background: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+	
+}
+body {
+	margin: 0;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+    }
+
+.header {
+	color: #6a659a;
+	font-size: 40px;
+	text-shadow: 4px 4px 3px rgb(4, 0, 255), -1px -1px 5px rgba(21, 61, 238, 0.5);
+
+}
+
+    .content {
+	flex-wrap: wrap;
+    }
+
+.card {
+	border: 3px solid #082f68;
+	justify-content: center;
+	flex: 1;
+	flex-shrink: 0;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	margin:20px;
+	padding: 20px;
+	gap: 30px;
+	background-color: rgb(149, 120, 255);
+	background-image: linear-gradient(315deg, #5246db 0%, #4615c3 74%);
+	box-shadow: 3px 4px 16px 6px rgb(0, 26, 221);
+	border-radius: 30px;
+ 	transform: translateY(20px);
+  	transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+	
+	
+}
+	
+	
+
+p {
+	font-size: 25px;
+	font-weight: 800;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5), -1px -1px 2px rgba(0, 45, 244, 0.5);
+
+	
+	
+}
+
+
+
+h1 {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+
+}
+
+button {
+	background: none;
+	color: white;
+	cursor: pointer;
+	border: none;
+	
+}
+
+.footer {
+		background-color: #eeee;
+		color: black;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+
+}
+
+.container {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex: 1;
+	flex-direction: column;
+}
+
+.card:hover {
+	/* Additional styles on hover */
+	transform: scale(1.05);
+	box-shadow: 3px 4px 16px 6px rgb(221, 0, 0);
+      }
+
+h1:hover {
+	text-shadow: 4px 4px 3px rgb(189, 34, 34), -1px -1px 5px rgba(238, 21, 21, 0.5);
+	
+}
+
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+.card:nth-child(odd) {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.card:nth-child(even) {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.zoomed {
+	transform: scale(1.5);
+}
